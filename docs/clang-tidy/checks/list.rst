@@ -101,6 +101,7 @@ Clang-Tidy Checks
    misc-unused-using-decls
    misc-use-after-move
    misc-virtual-near-miss
+   misc-virtual-shadowing
    modernize-avoid-bind
    modernize-deprecated-headers
    modernize-loop-convert

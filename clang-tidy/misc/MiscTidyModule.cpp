@@ -54,6 +54,7 @@
 #include "UnusedUsingDeclsCheck.h"
 #include "UseAfterMoveCheck.h"
 #include "VirtualNearMissCheck.h"
+#include "VirtualShadowingCheck.h"
 
 namespace clang {
 namespace tidy {
@@ -140,6 +141,8 @@ public:
     CheckFactories.registerCheck<UseAfterMoveCheck>("misc-use-after-move");
     CheckFactories.registerCheck<VirtualNearMissCheck>(
         "misc-virtual-near-miss");
+    CheckFactories.registerCheck<VirtualShadowingCheck>(
+        "misc-virtual-shadowing");
   }
 };
 

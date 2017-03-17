@@ -46,6 +46,7 @@ add_clang_library(clangTidyMiscModule
   UnusedUsingDeclsCheck.cpp
   UseAfterMoveCheck.cpp
   VirtualNearMissCheck.cpp
+  VirtualShadowingCheck.cpp
 
   LINK_LIBS
   clangAnalysis
